@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 700px;
+            
+            border: 1px solid red;
+            float: left;
+            margin: 10px;
+            /* overflow: auto; */
+            padding: 10px;
+        }
+        .div1::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .class1{
+            float: left;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Clear Kullanılmadan</h2>
+    <div class="div1">
+        <img src="gtr.jpg" width="300" height="200" alt="" class="class1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptate accusamus exercitationem ipsum, sequi esse dolorem nobis doloribus, nam totam nihil fugiat maiores quae tenetur possimus cumque. Autem, sapiente doloremque!
+    </div>
+    
+</body>
+</html>

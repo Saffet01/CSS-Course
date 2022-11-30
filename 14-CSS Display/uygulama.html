@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deneme</title>
+    <style>
+        .imgbox{
+            float: left;
+            border: 2px groove black;
+            margin: 4px;
+            padding: 6px;
+        }
+        button{
+            width: 100%;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="bir">Resim1 <br>
+        <img src="gtr.jpg" width="400" height="250" alt="">
+        <br>
+        <button onclick="removeElement()">Kaldır</button>
+    </div>
+
+    <div class="imgbox" id="iki">Resim2 <br>
+        <img src="supra.jpg" width="400" height="250" alt="">
+        <br>
+        <button onclick="changeVisibility()">Gizle</button>
+    </div>
+
+    <div class="imgbox" id="üç"> Resim3 <br>
+        <img src="rx7.jpg" width="400" height="250" alt="">
+        <br>
+        <button onclick="resetle()">Resetle</button>
+    </div>
+
+    <script>
+        function removeElement(){
+            document.getElementById("bir").style.display="none";
+        }
+
+        function changeVisibility(){
+            document.getElementById("iki").style.visibility="hidden";
+        }
+        function resetle(){
+            document.getElementById("bir").style.display="block";
+            document.getElementById("iki").style.visibility="visible";
+        }
+    </script>
+
+</body>
+</html>

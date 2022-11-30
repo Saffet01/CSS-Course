@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static{
+            position: static;
+            border: 2px solid red;
+            left: 30px;
+            /* position:static oldugundan dolayı
+            left:30px yazsak da soldan 30px 
+            bosluk bırakmadı. Bunun için position
+            relative olması gerekiyor. 2.div'de 
+            oldugu gibi. */
+        }
+        div.relative{
+            position: relative;
+            border: 2px solid lightcoral;
+            left: 30px;
+            top: 10px;
+        }
+        div.fixed{
+            position: fixed;
+            border: 2px solid salmon;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Position Static</h2>
+
+    <div class="static">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi at, assumenda sit in sapiente quis, debitis vitae, commodi fugit non incidunt explicabo nobis itaque consequatur sunt modi id animi aliquam cumque asperiores libero? A culpa sunt temporibus voluptate recusandae nisi nostrum cumque, sequi, voluptatibus odit nam impedit, quae exercitationem amet. Neque ab qui natus ratione quaerat porro atque? Cupiditate fugiat odio autem iste sunt, deserunt, excepturi id nam nostrum nemo natus eum distinctio non. Laudantium optio nemo quasi delectus saepe dolor libero sequi quidem, accusantium ab. Perferendis placeat, natus repellat soluta blanditiis accusantium minima dignissimos? Sequi minima quo nemo molestiae ullam optio, fugiat consectetur ducimus odit quos. Dolorum culpa facilis corrupti incidunt veritatis ex sunt id eum architecto deserunt rerum, obcaecati eius libero! Corporis ab adipisci cum vel, exercitationem architecto laborum voluptates sequi autem impedit. Unde, harum facere iusto officia necessitatibus aliquam iure laborum culpa suscipit dolorum. Dolor, enim!</div>
+    <br>
+    <div class="relative">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi at, assumenda sit in sapiente quis, debitis vitae, commodi fugit non incidunt explicabo nobis itaque consequatur sunt modi id animi aliquam cumque asperiores libero? A culpa sunt temporibus voluptate recusandae nisi nostrum cumque, sequi, voluptatibus odit nam impedit, quae exercitationem amet. Neque ab qui natus ratione quaerat porro atque? Cupiditate fugiat odio autem iste sunt, deserunt, excepturi id nam nostrum nemo natus eum distinctio non. Laudantium optio nemo quasi delectus saepe dolor libero sequi quidem, accusantium ab. Perferendis placeat, natus repellat soluta blanditiis accusantium minima dignissimos? Sequi minima quo nemo molestiae ullam optio, fugiat consectetur ducimus odit quos. Dolorum culpa facilis corrupti incidunt veritatis ex sunt id eum architecto deserunt rerum, obcaecati eius libero! Corporis ab adipisci cum vel, exercitationem architecto laborum voluptates sequi autem impedit. Unde, harum facere iusto officia necessitatibus aliquam iure laborum culpa suscipit dolorum. Dolor, enim!</div>
+    <br>
+    <div class="fixed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eligendi at, assumenda sit in sapiente quis, debitis vitae, commodi fugit non incidunt explicabo nobis itaque consequatur sunt modi id animi aliquam cumque asperiores libero? A culpa sunt temporibus voluptate recusandae nisi nostrum cumque, sequi, voluptatibus odit nam impedit, quae exercitationem amet. Neque ab qui natus ratione quaerat porro atque? Cupiditate fugiat odio autem iste sunt, deserunt, excepturi id nam nostrum nemo natus eum distinctio non. Laudantium optio nemo quasi delectus saepe dolor libero sequi quidem, accusantium ab. Perferendis placeat, natus repellat soluta blanditiis accusantium minima dignissimos? Sequi minima quo nemo molestiae ullam optio, fugiat consectetur ducimus odit quos. Dolorum culpa facilis corrupti incidunt veritatis ex sunt id eum architecto deserunt rerum, obcaecati eius libero! Corporis ab adipisci cum vel, exercitationem architecto laborum voluptates sequi autem impedit. Unde, harum facere iusto officia necessitatibus aliquam iure laborum culpa suscipit dolorum. Dolor, enim!</div>
+    
+</body>
+</html>
